@@ -24,8 +24,9 @@ body {
   margin: 0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   color: var(--text);
-  background: radial-gradient(1200px 800px at 10% -10%, #111936 0%, var(--bg) 35%),
-              radial-gradient(1000px 600px at 110% 10%, #0c162c 0%, var(--bg-2) 40%);
+  background:
+    radial-gradient(1200px 800px at 10% -10%, #111936 0%, var(--bg) 35%),
+    radial-gradient(1000px 600px at 110% 10%, #0c162c 0%, var(--bg-2) 40%);
   background-attachment: fixed;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
@@ -86,9 +87,20 @@ a:hover { text-decoration: underline; }
 .btn.ghost { background: transparent; }
 
 .social { display: flex; gap: .9rem; margin-top: .9rem; }
-.hero-media { justify-self: center; width: 230px; height: 230px; border-radius: 999px;
-  background: linear-gradient(145deg, rgba(124,58,237,.25), rgba(6,182,212,.15));
-  border: 1px solid var(--border); box-shadow: 0 16px 36px rgba(0,0,0,.35); overflow: hidden; }
+
+/* Avatar container (circle frame) — base look */
+.hero-media {
+  justify-self: center;
+  width: 230px;
+  height: 230px;
+  border-radius: 999px;
+  /* Remove background layers to prevent any visible band behind the image */
+  background: none;
+  border: 1px solid var(--border);
+  box-shadow: 0 16px 36px rgba(0,0,0,.35);
+  overflow: hidden;
+  position: relative;
+}
 
 /* Sections */
 .section { padding: 3.2rem 0; }
@@ -143,30 +155,18 @@ a:hover { text-decoration: underline; }
   .hero-media { width: 180px; height: 180px; }
   .menu-toggle { display: inline-block; }
   .site-nav { display: none; }
-  .site-nav.open { display: block; position: absolute; top: 56px; right: 0; background: var(--surface);
-    border: 1px solid var(--border); border-radius: 12px; padding: .6rem; box-shadow: var(--shadow); }
+  .site-nav.open {
+    display: block; position: absolute; top: 56px; right: 0; background: var(--surface);
+    border: 1px solid var(--border); border-radius: 12px; padding: .6rem; box-shadow: var(--shadow);
+  }
   .site-nav ul { flex-direction: column; align-items: flex-start; }
 }
 
 /* --- Avatar fit patch (final override) --- */
-.hero-media {
-  width: 230px;
-  height: 230px;
-  border-radius: 50%;
-  overflow: hidden;
-  position: relative;
-  border: 1px solid var(--border);
-  box-shadow: 0 16px 36px rgba(0,0,0,.35);
-}
-
 .hero-media img {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover;
-  object-position: center;
-}
-
-@media (max-width: 860px) {
-  .hero-media { width: 180px; height: 180px; }
+  object-fit: cover;        /* Fill the circle without distortion */
+  object-position: center;  /* Use 'center top' to raise the subject if needed */
 }
