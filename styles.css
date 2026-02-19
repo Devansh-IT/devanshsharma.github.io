@@ -147,3 +147,26 @@ a:hover { text-decoration: underline; }
     border: 1px solid var(--border); border-radius: 12px; padding: .6rem; box-shadow: var(--shadow); }
   .site-nav ul { flex-direction: column; align-items: flex-start; }
 }
+
+/* --- Avatar fit patch (final override) --- */
+.hero-media {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid var(--border);
+  box-shadow: 0 16px 36px rgba(0,0,0,.35);
+}
+
+.hero-media img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 860px) {
+  .hero-media { width: 180px; height: 180px; }
+}
