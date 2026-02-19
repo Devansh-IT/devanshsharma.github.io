@@ -1,25 +1,9 @@
 
-// Theme toggle with persistence
-(function themeToggle() {
-  const root = document.documentElement;
-  const toggle = document.getElementById('theme-toggle');
-  const stored = localStorage.getItem('theme');
-  if (stored) root.setAttribute('data-theme', stored);
-
-  if (toggle) {
-    toggle.addEventListener('click', () => {
-      const current =
-        root.getAttribute('data-theme') ||
-        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-      const next = current === 'dark' ? 'light' : 'dark';
-      root.setAttribute('data-theme', next);
-      localStorage.setItem('theme', next);
-    });
-  }
-})();
+// Update year
+document.getElementById('year').textContent = new Date().getFullYear();
 
 // Mobile menu
-(function mobileMenu() {
+(function mobileMenu(){
   const btn = document.querySelector('.menu-toggle');
   const nav = document.getElementById('site-nav');
   if (!btn || !nav) return;
@@ -29,5 +13,24 @@
   });
 })();
 
-// Year
-document.getElementById('year').textContent = new Date().getFullYear();
+// Theme toggle (optional)
+(function themeToggle(){
+  const root = document.documentElement;
+  const btn = document.getElementById('theme-toggle');
+  if (!btn) return;
+  btn.addEventListener('click', () => {
+    const current = root.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    const next = current === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+  });
+})();
+
+// 🔒 Force ALL links to open in a new tab (including mailto/tel)
+(function forceNewTab(){
+  const links = document.querySelectorAll('a[href]');
+  links.forEach(a => {
+    a.setAttribute('target', '_blank');
+    a.setAttribute('rel', 'noopener');
+  });
+})();
