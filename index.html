@@ -1,37 +1,46 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Devansh Sharma — Portfolio</title>
-  <meta name="description" content="Portfolio of Devansh Sharma, IT Customer Operations Depot Technician based in Gurugram. Projects, experience, education, and contact." />
+  <meta name="description" content="Portfolio of Devansh Sharma, IT Customer Operations Techn based in Gurugram. Projects, experience, education, and contact." />
   <meta name="color-scheme" content="light dark" />
   <link rel="icon" href="assets/favicon.svg" />
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
+
+  <!-- JSON-LD Schema -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"Person",
     "name":"Devansh Sharma",
-    "jobTitle":"IT Customer Operations Depot Technician",
+    "jobTitle":"IT Customer Operations Tech",
     "url":"/",
     "image":"assets/avatar.png",
     "address":{"@type":"PostalAddress","addressLocality":"Gurugram","addressCountry":"IN"},
     "email":"mailto:134dev.s@gmail.com",
-    "sameAs":["https://devansh-it.github.io/devanshsharma.github.io/", "https://www.linkedin.com/in/devansh-it"]
+    "sameAs":[
+      "https://devansh-it.github.io/devanshsharma.github.io/",
+      "https://www.linkedin.com/in/devansh-it"
+    ]
   }
   </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header" role="banner">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="Home">
         <span class="brand-mark">DS</span>
         <span class="brand-text">Devansh<span class="muted">Sharma</span></span>
       </a>
+
       <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">☰</button>
+
       <nav id="site-nav" class="site-nav" role="navigation" aria-label="Primary">
         <ul>
           <li><a href="#about">About</a></li>
@@ -40,6 +49,7 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="assets/Devansh%20Sharma%20Resume.pdf" download>Resume</a></li>
           <li><button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">🌗</button></li>
         </ul>
       </nav>
@@ -47,18 +57,24 @@
   </header>
 
   <main id="main">
+    <!-- Hero -->
     <section class="hero">
       <div class="container hero-inner">
         <div class="hero-copy">
           <p class="eyebrow">Hello, I’m</p>
           <h1>Devansh Sharma</h1>
           <p class="tagline">IT Customer Operations Depot Technician · Gurugram</p>
-          <p class="summary">I keep end-user devices and depot operations running reliably—hardware triage, imaging, asset lifecycle, and customer-first support. I enjoy building simple tools that reduce manual work and improve MTTR.</p>
+          <p class="summary">
+            I keep end-user devices and depot operations running reliably—hardware triage, imaging,
+            asset lifecycle, and customer-first support. I enjoy building simple tools that reduce
+            manual work and improve MTTR.
+          </p>
           <div class="cta-row">
             <a class="btn primary" href="#projects">View Projects</a>
             <a class="btn" href="mailto:134dev.s@gmail.com">Email Me</a>
             <a class="btn" href="https://devansh-it.github.io/devanshsharma.github.io/">GitHub</a>
             <a class="btn" href="https://www.linkedin.com/in/devansh-it">LinkedIn</a>
+            <a class="btn ghost" href="assets/Devansh%20Sharma%20Resume.pdf" download>Download CV</a>
           </div>
           <div class="social">
             <a aria-label="GitHub" href="https://devansh-it.github.io/devanshsharma.github.io/">GitHub</a>
@@ -71,13 +87,20 @@
       </div>
     </section>
 
+    <!-- About -->
     <section id="about" class="section">
       <div class="container">
         <h2>About</h2>
-        <p>I’m an IT Depot Technician focused on reliable device turnaround, imaging pipelines, inventory accuracy, and customer satisfaction. My toolbox includes Windows imaging (Intune/Autopilot), asset tracking, scripting for process automation, and clear communication with internal customers.</p>
+        <p>
+          I’m an IT Depot Technician focused on reliable device turnaround, imaging pipelines,
+          inventory accuracy, and customer satisfaction. My toolbox includes Windows imaging
+          (Intune/Autopilot), asset tracking, scripting for process automation, and clear
+          communication with internal customers.
+        </p>
       </div>
     </section>
 
+    <!-- Skills -->
     <section id="skills" class="section alt">
       <div class="container">
         <h2>Skills</h2>
@@ -94,6 +117,7 @@
       </div>
     </section>
 
+    <!-- Experience -->
     <section id="experience" class="section">
       <div class="container">
         <h2>Experience</h2>
@@ -114,6 +138,7 @@
       </div>
     </section>
 
+    <!-- Projects -->
     <section id="projects" class="section alt">
       <div class="container">
         <h2>Projects</h2>
@@ -127,6 +152,7 @@
               <a class="btn small" href="#">Code</a>
             </div>
           </article>
+
           <article class="card project">
             <h3>Imaging Checklist Template</h3>
             <p>Shareable SOP + checklist that reduces variance during device imaging and QA.</p>
@@ -140,6 +166,7 @@
       </div>
     </section>
 
+    <!-- Education -->
     <section id="education" class="section">
       <div class="container">
         <h2>Education</h2>
@@ -155,16 +182,19 @@
       </div>
     </section>
 
-    <section id="contact" class="section alt">
-      <div class="container">
-        <h2>Contact</h2>
-        <div class="contact-card">
-          <p><strong>Email:</strong> <a href="mailto:134dev.s@gmail.com">134dev.s@gmail.com</a></p>
-          <p><strong>GitHub:</strong> <a href="https://devansh-it.github.io/devanshsharma.github.io/">https://devansh-it.github.io/devanshsharma.github.io/</a></p>
-          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/devansh-it">https://www.linkedin.com/in/devansh-it</a></p>
-        </div>
-      </div>
-    </section>
+    <!-- Contact -->
+<section id="contact" class="section alt">
+  <div class="container">
+    <h2>Contact</h2>
+    <div class="contact-card">
+      <p><strong>Email:</strong> mailto:134dev.s@gmail.com134dev.s@gmail.com</a></p>
+      <p><strong>Phone:</strong> tel:93408484519340848451</a></p>
+      <p><strong>GitHub:</strong> https://devansh-it.github.io/devanshsharma.github.io/https://devansh-it.github.io/devanshsharma.github.io/</a></p>
+      <p><strong>LinkedIn:</strong> https://www.linkedin.com/in/devansh-ithttps://www.linkedin.com/in/devansh-it</a></p>
+    </div>
+  </div>
+</section>
+
   </main>
 
   <footer class="site-footer">
