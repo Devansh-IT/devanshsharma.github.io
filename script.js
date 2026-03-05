@@ -1,6 +1,6 @@
 
 // Update year
-document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('year') && (document.getElementById('year').textContent = new Date().getFullYear());
 
 // Mobile menu
 (function mobileMenu(){
@@ -13,7 +13,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
   });
 })();
 
-// Theme toggle (optional)
+// Theme toggle
 (function themeToggle(){
   const root = document.documentElement;
   const btn = document.getElementById('theme-toggle');
@@ -26,10 +26,9 @@ document.getElementById('year').textContent = new Date().getFullYear();
   });
 })();
 
-// 🔒 Force ALL links to open in a new tab (including mailto/tel)
+// Force ALL links to open in a new tab (including mailto/tel)
 (function forceNewTab(){
-  const links = document.querySelectorAll('a[href]');
-  links.forEach(a => {
+  document.querySelectorAll('a[href]').forEach(a => {
     a.setAttribute('target', '_blank');
     a.setAttribute('rel', 'noopener');
   });
