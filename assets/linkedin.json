@@ -1,5 +1,5 @@
 {
-  "headline": "IT Systems / Cloud Administrator | M365 • Azure AD (Entra) • Intune • SCCM • VMware/Hyper‑V",
+  "headline": "IT Systems / Cloud Administrator | M365 • Azure AD (Entra) • Intune • SCCM • VMware/Hyper-V",
   "about": "I'm a dedicated IT professional with a strong background in cloud technologies, automation, systems administration, and end-user support across diverse platforms and environments. With hands-on experience in both IaaS and SaaS, I specialize in resolving technical issues efficiently to minimize downtime and ensure business continuity.\n\nMy expertise includes managing Microsoft Azure, AWS, and Linux environments, along with on-premises Active Directory, Azure Active Directory, Microsoft 365, networking, and remote monitoring tools. I focus on maintaining stable and secure IT infrastructures while delivering reliable operational support.\n\nI take pride in providing responsive, customer-focused service while maintaining a proactive approach to troubleshooting, automation, and infrastructure optimization.\n\nDriven by a passion for technology and continuous learning, I strive to bridge the gap between clients and complex IT infrastructure by delivering clear communication, dependable support, and scalable cloud solutions.",
   "highlights": [
     {
@@ -22,36 +22,36 @@
       "name": "Microsoft AI Skillset",
       "issuer": "Microsoft",
       "date": "2025",
-      "url": "https://gsp.ey.com/storage/certificates/Certificate_154491_34_yq2si.pdf?sv=2019-07-07&sr=b&sig=GfFduGSAerQmqDzs2PYlbGxQCL6EtwDFfbdWLJNyTuo%3D&se=2025-11-27T17%3A34%3A51Z&sp=r"
+      "url": "https://gsp.ey.com/storage/certificates/Certificate_154491_34_yq2si.pdf"
     },
     {
-      "name": "AZ‑104 (Admin) – Cert Prep",
+      "name": "AZ-104 (Admin) – Cert Prep",
       "issuer": "Microsoft Press",
       "date": "2025",
-      "url": "https://www.linkedin.com/learning/certificates/0ce1bcd45519058f026a675383fb46db0b1f139b47fffc73a0aa80124b751944?u=68749026&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BYnNew%2FNOSmaJSpiQg8%2FOQQ%3D%3D"
+      "url": "https://www.linkedin.com/learning/certificates/0ce1bcd45519058f026a675383fb46db0b1f139b47fffc73a0aa80124b751944"
     },
     {
       "name": "CompTIA A+",
-      "issuer": "CompTIA/Udemy",
+      "issuer": "CompTIA",
       "date": "2024",
-      "url": ""
+      "url": null
     },
     {
       "name": "Network+",
-      "issuer": "CompTIA/Udemy",
+      "issuer": "CompTIA",
       "date": "2024",
-      "url": ""
+      "url": null
     },
     {
       "name": "CCNA",
-      "issuer": "Cisco/Udemy",
+      "issuer": "Cisco",
       "date": "2024",
-      "url": ""
+      "url": null
     }
   ],
   "recommendations": [
     {
-      "quote": "Devansh is reliable and proactive—great at cross‑functional collaboration.",
+      "quote": "Devansh is reliable and proactive—great at cross-functional collaboration.",
       "author": "Shweta Gautam",
       "role": "Manager, ABB"
     },
