@@ -1,52 +1,29 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Devansh Sharma Portfolio</title>
-  <meta name="description" content="Devansh Sharma • IT Customer Operations Tech • Portfolio, projects, certifications, contact." />
+  <title>Devansh Sharma — Portfolio</title>
+  <meta name="description" content="Devansh Sharma • IT Systems/Cloud Admin • Portfolio, experience, certifications, cloud components, and contact." />
   <meta name="color-scheme" content="light dark" />
   <link rel="icon" href="assets/favicon.svg" />
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
-
-  <!-- JSON-LD Schema -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Devansh Sharma",
-    "jobTitle":"IT Customer Operations Tech",
-    "url":"/",
-    "image":"assets/avatar.png",
-    "address":{"@type":"PostalAddress","addressLocality":"Gurugram","addressCountry":"IN"},
-    "email":"mailto:134dev.s@gmail.com",
-    "sameAs":[
-      "https://github.com/devansh-it",
-      "https://www.linkedin.com/in/devansh-it"
-    ]
-  }
-  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <div class="layout">
-    <!-- ========== SIDEBAR (vCard) ========== -->
     <aside class="card sidebar" role="complementary">
-      <div class="avatar-wrap">
-        <img class="avatar" src="assets/avatar.png" alt="Devansh Sharma photo" />
-      </div>
-
+      <div class="avatar-wrap"><img class="avatar" src="assets/avatar.png" alt="Devansh Sharma avatar"/></div>
       <h1 class="name">Devansh Sharma</h1>
-      <p class="role">IT Customer Operations Tech L3</p>
+      <p id="li-headline" class="role">IT Systems / Cloud Administrator</p>
       <p class="loc">Gurugram, IN</p>
 
       <div class="contact-mini">
-        <a href="mailto:134dev.s@gmail.com" class="mini-link" aria-label="Email Devansh">Email</a>
-        <a href="tel:+919340848451" class="mini-link" aria-label="Call Devansh">Call</a>
-        <a href="assets/Devansh%20Sharma%20Resume.pdf" class="mini-link" download aria-label="Download Resume">Resume</a>
+        <a class="mini-link" href="mailto:134dev.s@gmail.com">Email</a>
+        <a class="mini-link" href="tel:+919340848451">Call</a>
+        <a class="mini-link" href="assets/Devansh%20Sharma%20Resume.pdf" download>Download Resume</a>
       </div>
 
       <div class="socials">
@@ -54,145 +31,158 @@
         <a href="https://www.linkedin.com/in/devansh-it" aria-label="LinkedIn">LinkedIn</a>
       </div>
 
+      <button id="theme-toggle" class="theme-toggle" type="button"><span class="label">Dark Mode</span></button>
+
       <nav class="sidebar-nav" aria-label="Sections">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#certifications" class="nav-link">Certifications</a>
-        <a href="#education" class="nav-link">Education</a>
-        <a href="#contact" class="nav-link">Contact</a>
+        <a class="nav-link" href="#objective">Career Objective</a>
+        <a class="nav-link" href="#skills">Key Skills</a>
+        <a class="nav-link" href="#experience">Work Experience</a>
+        <a class="nav-link" href="#cloud">Cloud Components</a>
+        <a class="nav-link" href="#linkedin">LinkedIn Highlights</a>
+        <a class="nav-link" href="#certifications">Certifications</a>
+        <a class="nav-link" href="#testimonials">Testimonials</a>
+        <a class="nav-link" href="#academics">Academic Qualification</a>
+        <a class="nav-link" href="#contact">Contact</a>
       </nav>
     </aside>
 
-    <!-- ========== MAIN PANEL ========== -->
     <main id="main" class="main">
-      <!-- Hero (intro banner) -->
       <section class="panel hero">
-        <h2 class="sr-only">Intro</h2>
         <div class="intro">
           <p class="eyebrow">Hello, I’m</p>
           <h2 class="headline">Devansh Sharma</h2>
-          <p class="tagline">I keep end-user devices and depot operations running reliably—hardware triage, imaging, asset lifecycle, and customer-first support. I enjoy building simple tools that reduce manual work and improve MTTR.</p>
+          <p class="tagline">Experienced IT Systems Administrator with expertise in Windows Azure & Linux, virtualization, networking, and enterprise application Deployment. Skilled in Microsoft 365, Azure AD, Intune, automation scripting, and ITIL best practices.</p>
           <div class="cta-row">
-            <a class="btn primary" href="#projects">View Projects</a>
-            <a class="btn" href="assets/Devansh%20Sharma%20Resume.pdf" download>Download CV</a>
+            <a class="btn primary" href="#experience">View Experience</a>
+            <a class="btn" href="assets/Devansh%20Sharma%20Resume.pdf" download>Download Resume</a>
           </div>
         </div>
       </section>
 
-      <!-- About -->
-      <section id="about" class="panel">
-        <h2>About</h2>
-        <p>I’m an IT Depot Tech focused on reliable device turnaround, imaging pipelines, inventory accuracy, and customer satisfaction. My toolbox includes Windows imaging (Intune/Autopilot), asset tracking, scripting for process automation, and clear communication with internal customers.</p>
+      <section id="objective" class="panel">
+        <h2>Career Objective</h2>
+        <p>Experienced IT Systems Administrator with expertise in Windows & Linux environments, virtualization, networking, and enterprise application support. Skilled in cloud technologies (Microsoft 365, Azure AD), endpoint management, and automation scripting. Proven ability to deliver L1/L2/L3 technical support, implement ITIL best practices, and ensure secure, efficient infrastructure operations. Ready to contribute to cloud-first, AI-driven environments with strong knowledge of Azure and modern IT solutions.</p>
       </section>
 
-      <!-- Skills -->
       <section id="skills" class="panel alt">
-        <h2>Skills</h2>
+        <h2>Key Skills & Core Competencies</h2>
         <ul class="tags">
-          <li>Windows Imaging (Intune/Autopilot)</li>
-          <li>Asset Lifecycle </li>
-          <li>Hardware Triage & RMA</li>
-          <li>Ticketing (ServiceNow/Jira)</li>
-          <li>PowerShell Basics</li>
-          <li>Endpoint Security Hygiene</li>
-          <li>Customer Support</li>
-          <li>Azure Cloud</li>
+          <li>Windows & macOS Device Support</li><li>Microsoft 365 & Exchange Online</li><li>Azure AD / Entra ID</li><li>Intune (MDM/MAM)</li>
+          <li>Virtualization: VMware, Hyper-V</li><li>Endpoint Configuration Manager (SCCM), WSUS</li><li>Active Directory (On‑Prem & Azure)</li><li>Device Provisioning & Compliance</li>
+          <li>PowerShell / Bash, HTML, CSS</li><li>Backup & DR: Veeam, Zerto</li><li>ServiceNow, Zoho Desk</li><li>Networking, VPN (Cisco AnyConnect, Zscaler)</li>
+          <li>ITIL v4 Processes</li>
         </ul>
       </section>
 
-      <!-- Experience -->
       <section id="experience" class="panel">
-        <h2>Experience</h2>
+        <h2>Work Experience</h2>
         <ol class="timeline">
           <li>
-            <div class="time">Sep-2025 — Present</div>
+            <div class="time">09/2025 — Present</div>
             <div class="card">
-              <h3>IT Customer Operations Depot Technician</h3>
-              <p class="meta">Company · Gurugram</p>
+              <h3>IT Customer Operations L3 — RSM USI</h3>
               <ul>
-                <li>Owns device intake, triage, imaging, QA, and dispatch with SLA accountability.</li>
-                <li>Improved asset reconciliation accuracy and reduced turnaround times.</li>
-                <li>Automated routine checks with scripts and templates.</li>
+                <li>Coordinated technology projects for U.S. clients; led deployments in India.</li>
+                <li>Automation with PowerShell; ITAM cloud management; optimized workflows using Azure & Microsoft 365.</li>
+                <li>Guided cross‑functional teams; delivered projects on time; improved efficiency, scalability, and security.</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="time">09/2024 — 09/2025</div>
+            <div class="card">
+              <h3>System Engineer | Administrator — ABB India Pvt. Ltd. (Payroll: Arvensys)</h3>
+              <ul>
+                <li>IT infrastructure support: user provisioning, device compliance, application troubleshooting.</li>
+                <li>Managed Microsoft 365, Intune, Exchange Online; supported Windows & macOS with MDM/MAM policies.</li>
+                <li>Ticket handling via ServiceNow; remote access via Cisco AnyConnect & Zscaler.</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="time">11/2022 — 05/2024</div>
+            <div class="card">
+              <h3>IT Support Engineer — Curio Infotech Pvt. Ltd.</h3>
+              <ul>
+                <li>L1/L2 support for Windows/Linux, Office 365, Server Deployment; OS installs, patching, backup & recovery.</li>
+                <li>Created & maintained VMs with VMware/Hyper‑V; managed DHCP, DNS, firewalls; LAN/WAN support.</li>
+                <li>Assisted in ITIL‑based incident/request/asset management processes.</li>
               </ul>
             </div>
           </li>
         </ol>
       </section>
 
-      <!-- Projects -->
-      <section id="projects" class="panel alt">
-        <h2>Projects</h2>
-        <div class="grid">
-          <article class="card project">
-            <h3>Depot Intake Tracker</h3>
-            <p>Lightweight spreadsheet + script combo to reduce intake mistakes and speed up labeling.</p>
-            <ul class="tags"><li>PowerShell</li><li>CSV</li><li>QR</li></ul>
-            <div class="links">
-              <a class="btn small" href="#">Demo</a>
-              <a class="btn small" href="#">Code</a>
-            </div>
-          </article>
-
-          <article class="card project">
-            <h3>Imaging Checklist Template</h3>
-            <p>Shareable SOP + checklist that reduces variance during device imaging and QA.</p>
-            <ul class="tags"><li>Docs</li><li>SOP</li><li>QA</li></ul>
-            <div class="links">
-              <a class="btn small" href="#">Demo</a>
-              <a class="btn small" href="#">Code</a>
-            </div>
-          </article>
+      <section id="cloud" class="panel alt">
+        <h2>Cloud Components</h2>
+        <div class="clouds">
+          <article class="cloud"><h3>Azure Active Directory (Entra ID)</h3><p class="issuer">User/Group mgmt, Conditional Access, SSO, Hybrid Join.</p></article>
+          <article class="cloud"><h3>Microsoft Intune (MDM/MAM)</h3><p class="issuer">Device provisioning, compliance, app protection, Autopilot.</p></article>
+          <article class="cloud"><h3>Microsoft 365 & Exchange Online</h3><p class="issuer">Mail flow, policies, retention, secure collaboration.</p></article>
+          <article class="cloud"><h3>Azure Virtual Machines</h3><p class="issuer">Sizing, images, NSGs, updates, backup integration.</p></article>
+          <article class="cloud"><h3>Defender for Endpoint</h3><p class="issuer">Endpoint security posture, EDR, vulnerability mgmt.</p></article>
+          <article class="cloud"><h3>ConfigMgr (SCCM) / MEM</h3><p class="issuer">Software deployment, patching, inventory at scale.</p></article>
+          <article class="cloud"><h3>Veeam / Zerto</h3><p class="issuer">Backup & DR orchestration, restore testing.</p></article>
+          <article class="cloud"><h3>Zscaler & Cisco AnyConnect</h3><p class="issuer">Secure remote access, proxy policies, split tunneling.</p></article>
         </div>
       </section>
 
-      <!-- Certifications (new) -->
-      <section id="certifications" class="panel">
-        <h2>Certifications</h2>
+      <!-- LinkedIn Highlights (auto-filled from assets/linkedin.json) -->
+      <section id="linkedin" class="panel">
+        <h2>LinkedIn Highlights</h2>
+        <p id="li-about" class="muted"></p>
+        <ul id="li-highlights" class="list"></ul>
+
+        <h3>Licenses & Certifications (LinkedIn)</h3>
+        <div id="li-certs" class="certs"></div>
+
+        <h3>Testimonials / Recommendations (LinkedIn)</h3>
+        <div id="li-recos" class="testimonials"></div>
+
+        <h3>Featured</h3>
+        <ul id="li-featured" class="list"></ul>
+      </section>
+
+      <section id="certifications" class="panel alt">
+        <h2>Extra Trainings & Certifications</h2>
         <div class="certs">
-          <article class="cert card">
-            <h3>CompTIA A+</h3>
-            <p class="issuer">CompTIA</p>
-            <ul class="tags"><li>Hardware</li><li>Troubleshooting</li></ul>
-          </article>
-          <article class="cert card">
-            <h3>CompTIA Network+ (N+)</h3>
-            <p class="issuer">CompTIA</p>
-            <ul class="tags"><li>Networking</li><li>Infrastructure</li></ul>
-          </article>
-          <article class="cert card">
-            <h3>/article>
+          <article class="cert"><h3>ITIL® 4 Foundation</h3><p class="issuer">Pink Elephant · 2025</p></article>
+          <article class="cert"><h3>Microsoft AI Skillset</h3><p class="issuer">Microsoft</p></article>
+          <article class="cert"><h3>AZ‑104 (Admin) — Cert Prep</h3><p class="issuer">Microsoft Press</p></article>
+          <article class="cert"><h3>CompTIA A+ / Network+</h3><p class="issuer">Udemy · 2024</p></article>
+          <article class="cert"><h3>CCNA</h3><p class="issuer">Udemy · 2024</p></article>
+          <article class="cert"><h3>Diploma in Cloud Computing</h3><p class="issuer">Jetking, Gwalior · 2023–2024</p></article>
         </div>
       </section>
 
-      <!-- Education -->
-      <section id="education" class="panel alt">
-        <h2>Education</h2>
-        <ul class="list">
-          <li>
-            <div class="card">
-              <h3>BSc in Information Technology</h3>
-              <p class="meta">Sample University · 2019 — 2023 · Gurugram</p>
-              <p>Coursework: Operating Systems, Networking, Scripting, ITIL Foundations.</p>
-            </div>
-          </li>
+      <section id="testimonials" class="panel">
+        <h2>Testimonials & References</h2>
+        <div class="testimonials">
+          <article class="testimonial"><blockquote>“Devansh consistently delivers high‑quality support and drives automation that saves the team hours each week.”</blockquote><footer>— Shweta Gautam, Service Delivery Manager (ABB India)</footer></article>
+          <article class="testimonial"><blockquote>“Reliable, proactive, and great with cross‑functional collaboration. A go‑to for Intune and M365 issues.”</blockquote><footer>— Rakesh Bane, ITSM (Hitachi Energy)</footer></article>
+          <article class="testimonial"><blockquote>“Handled complex migrations with minimal downtime and clear communication to stakeholders.”</blockquote><footer>— Jitendra Sing, Team Senior (Curio)</footer></article>
+        </div>
+      </section>
+
+      <section id="academics" class="panel alt">
+        <h2>Academic Qualification</h2>
+        <ul>
+          <li><strong>Graduation</strong> — Jiwaji University, Gwalior (2019–2022)</li>
+          <li><strong>Higher Secondary</strong> — Boys Hr. Sec, Thattipur, Gwalior (2018–2019) — 84.6%</li>
+          <li><strong>High School</strong> — Durgadas School, Gwalior (2016–2017) — 82.6%</li>
         </ul>
       </section>
 
-      <!-- Contact -->
       <section id="contact" class="panel">
         <h2>Contact</h2>
-
-        <div class="card contact-card" style="margin-bottom:1rem">
-          <p><strong>Email:</strong> mailto:134dev.s@gmail.com/a></p>
-          <p><strong>Phone:</strong> tel:+919340848451</a></p>
-          <p><strong>GitHub:</strong> https://github.com/devansh-it</a></p>
-          <p><strong>LinkedIn:</strong> https://www.linkedin.com/in/devansh-it</a></p>
+        <div class="card contact-card" style="margin-bottom:1rem;padding:1rem">
+          <p><strong>Phone:</strong> <a href="tel:+919340848451">+91 93408 48451</a></p>
+          <p><strong>Email:</strong> <a href="mailto:134dev.s@gmail.com">134dev.s@gmail.com</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/devansh-it">linkedin.com/in/devansh-it</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/devansh-it">github.com/devansh-it</a></p>
         </div>
 
-        <!-- Contact form (mailto handler in script.js) -->
-        <form id="contact-form" class="form card" novalidate>
+        <form id="contact-form" class="form" novalidate>
           <div class="form-row">
             <div>
               <label for="name" class="label">Name</label>
@@ -224,18 +214,15 @@
         </form>
       </section>
 
-      <footer class="site-footer">
-        <p>© <span id="year"></span> Certified By A+, N+, CCNA, ITIL, Azure, AI Skillset.</p>
-      </footer>
+      <footer class="site-footer"><p>© <span id="year"></span> Devansh Sharma. All rights reserved.</p></footer>
     </main>
   </div>
 
-  <!-- Mobile bottom nav (vCard-like quick tabs) -->
   <nav class="bottom-nav" aria-label="Mobile section nav">
-    #aboutAbout</a>
-    #skillsSkills</a>
-    #projectsProjects</a>
-    #contactContact</a>
+    <a href="#objective">Objective</a>
+    <a href="#skills">Skills</a>
+    <a href="#linkedin">LinkedIn</a>
+    <a href="#contact">Contact</a>
   </nav>
 </body>
 </html>
