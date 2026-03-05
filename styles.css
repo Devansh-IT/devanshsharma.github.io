@@ -1,4 +1,3 @@
-
 /* Base */
 body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
 .container{width:min(1100px,92vw);margin-inline:auto}
@@ -28,19 +27,8 @@ h1{font-size:clamp(2rem,4vw,3rem);margin:.2rem 0 .4rem}
 .social{display:flex;gap:.8rem;margin-top:.8rem}
 
 /* Avatar (full-frame circle) */
-.hero-media{
-  justify-self:center;
-  width:220px;height:220px;border-radius:50%;
-  overflow:hidden;position:relative;
-  border:1px solid #e5e7eb;
-  box-shadow:0 8px 24px rgba(0,0,0,.06);
-  background:none !important;
-  display:grid;place-items:center;
-}
-.hero-media img{
-  width:100%;height:100%;
-  display:block;object-fit:cover;object-position:center;
-}
+.hero-media{justify-self:center;width:220px;height:220px;border-radius:50%;overflow:hidden;position:relative;border:1px solid #e5e7eb;box-shadow:0 8px 24px rgba(0,0,0,.06);background:none !important;display:grid;place-items:center}
+.hero-media img{width:100%;height:100%;display:block;object-fit:cover;object-position:center}
 
 /* Sections */
 .section{padding:3rem 0}
@@ -68,7 +56,4 @@ h1{font-size:clamp(2rem,4vw,3rem);margin:.2rem 0 .4rem}
 .back-to-top{color:#6b7280}
 
 /* Responsive */
-@media (max-width:860px){
-  .hero-inner{grid-template-columns:1fr}
-  .hero-media{width:180px;height:180px}
-}
+@media (max-width:860px){.hero-inner{grid-template-columns:1fr}.hero-media{width:180px;height:180px}}
