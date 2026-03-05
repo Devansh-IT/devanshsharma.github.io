@@ -1,0 +1,74 @@
+{
+  "headline": "IT Systems / Cloud Administrator | M365 • Azure AD (Entra) • Intune • SCCM • VMware/Hyper‑V",
+  "about": "Paste your LinkedIn About summary here.",
+  "highlights": [
+    {
+      "title": "Improved device turnaround by 30%",
+      "detail": "Streamlined depot intake and imaging with automation (PowerShell/Intune)."
+    },
+    {
+      "title": "Reduced ticket MTTR",
+      "detail": "Standardized KBs & runbooks; leveraged Intune compliance & MEM reporting."
+    }
+  ],
+  "licenses_certifications": [
+    {
+      "name": "ITIL® 4 Foundation",
+      "issuer": "Pink Elephant",
+      "date": "2025",
+      "url": ""
+    },
+    {
+      "name": "Microsoft AI Skillset",
+      "issuer": "Microsoft",
+      "date": "2025",
+      "url": ""
+    },
+    {
+      "name": "AZ‑104 (Admin) – Cert Prep",
+      "issuer": "Microsoft Press",
+      "date": "2025",
+      "url": ""
+    },
+    {
+      "name": "CompTIA A+",
+      "issuer": "CompTIA/Udemy",
+      "date": "2024",
+      "url": ""
+    },
+    {
+      "name": "Network+",
+      "issuer": "CompTIA/Udemy",
+      "date": "2024",
+      "url": ""
+    },
+    {
+      "name": "CCNA",
+      "issuer": "Cisco/Udemy",
+      "date": "2024",
+      "url": ""
+    }
+  ],
+  "recommendations": [
+    {
+      "quote": "Devansh is reliable and proactive—great at cross‑functional collaboration.",
+      "author": "Name Hidden",
+      "role": "Manager, Company"
+    },
+    {
+      "quote": "Strong ownership and excellent customer focus in resolving M365 issues.",
+      "author": "Name Hidden",
+      "role": "Lead, Company"
+    }
+  ],
+  "featured": [
+    {
+      "label": "SOP: Imaging Checklist",
+      "url": "#"
+    },
+    {
+      "label": "Intune Compliance Dashboard",
+      "url": "#"
+    }
+  ]
+}
