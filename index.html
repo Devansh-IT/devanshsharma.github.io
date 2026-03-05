@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Devansh Sharma — Portfolio</title>
-  <meta name="description" content="Portfolio of Devansh Sharma, IT Customer Operations Tech based in Gurugram. Projects, experience, education, and contact." />
+  <title>Devansh Sharma — vCard Portfolio</title>
+  <meta name="description" content="Devansh Sharma • IT Customer Operations Tech • Portfolio, projects, certifications, contact." />
   <meta name="color-scheme" content="light dark" />
   <link rel="icon" href="assets/favicon.svg" />
   <link rel="stylesheet" href="styles.css" />
@@ -31,77 +32,63 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header" role="banner">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Home">
-        <span class="brand-mark">DS</span>
-        <span class="brand-text">Devansh<span class="muted">Sharma</span></span>
-      </a>
+  <div class="layout">
+    <!-- ========== SIDEBAR (vCard) ========== -->
+    <aside class="card sidebar" role="complementary">
+      <div class="avatar-wrap">
+        <img class="avatar" src="assets/avatar.png" alt="Devansh Sharma photo" />
+      </div>
 
-      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">☰</button>
+      <h1 class="name">Devansh Sharma</h1>
+      <p class="role">IT Customer Operations Tech L3</p>
+      <p class="loc">Gurugram, IN</p>
 
-      <nav id="site-nav" class="site-nav" role="navigation" aria-label="Primary">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="assets/Devansh%20Sharma%20Resume.pdf" download>Resume</a></li>
-          <li><button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">🌗</button></li>
-        </ul>
+      <div class="contact-mini">
+        <a href="mailto:134dev.s@gmail.com" class="mini-link" aria-label="Email Devansh">Email</a>
+        <a href="tel:+919340848451" class="mini-link" aria-label="Call Devansh">Call</a>
+        <a href="assets/Devansh%20Sharma%20Resume.pdf" class="mini-link" download aria-label="Download Resume">Resume</a>
+      </div>
+
+      <div class="socials">
+        <a href="https://github.com/devansh-it" aria-label="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/devansh-it" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+
+      <nav class="sidebar-nav" aria-label="Sections">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
-    </div>
-  </header>
+    </aside>
 
-  <main id="main">
-    <!-- Hero -->
-    <section class="hero" id="top">
-      <div class="container hero-inner">
-        <div class="hero-copy">
+    <!-- ========== MAIN PANEL ========== -->
+    <main id="main" class="main">
+      <!-- Hero (intro banner) -->
+      <section class="panel hero">
+        <h2 class="sr-only">Intro</h2>
+        <div class="intro">
           <p class="eyebrow">Hello, I’m</p>
-          <h1>Devansh Sharma</h1>
-          <p class="tagline">IT Customer Operations Tech L3 · Gurugram</p>
-          <p class="summary">
-            I keep end-user devices and depot operations running reliably—hardware triage, imaging,
-            asset lifecycle, and customer-first support. I enjoy building simple tools that reduce
-            manual work and improve MTTR.
-          </p>
+          <h2 class="headline">Devansh Sharma</h2>
+          <p class="tagline">I keep end-user devices and depot operations running reliably—hardware triage, imaging, asset lifecycle, and customer-first support. I enjoy building simple tools that reduce manual work and improve MTTR.</p>
           <div class="cta-row">
             <a class="btn primary" href="#projects">View Projects</a>
-            <a class="btn" href="mailto:134dev.s@gmail.com">Email Me</a>
-            <a class="btn" href="https://github.com/devansh-it">GitHub</a>
-            <a class="btn" href="https://www.linkedin.com/in/devansh-it">LinkedIn</a>
-            <a class="btn ghost" href="assets/Devansh%20Sharma%20Resume.pdf" download>Download CV</a>
-          </div>
-          <div class="social">
-            <a aria-label="GitHub" href="https://github.com/devansh-it">GitHub</a>
-            <a aria-label="LinkedIn" href="https://www.linkedin.com/in/devansh-it">LinkedIn</a>
+            <a class="btn" href="assets/Devansh%20Sharma%20Resume.pdf" download>Download CV</a>
           </div>
         </div>
-        <div class="hero-media">
-          <img src="assets/avatar.png" alt="Profile photo" />
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- About -->
-    <section id="about" class="section">
-      <div class="container">
+      <!-- About -->
+      <section id="about" class="panel">
         <h2>About</h2>
-        <p>
-          I’m an IT Depot Tech focused on reliable device turnaround, imaging pipelines,
-          inventory accuracy, and customer satisfaction. My toolbox includes Windows imaging
-          (Intune/Autopilot), asset tracking, scripting for process automation, and clear
-          communication with internal customers.
-        </p>
-      </div>
-    </section>
+        <p>I’m an IT Depot Tech focused on reliable device turnaround, imaging pipelines, inventory accuracy, and customer satisfaction. My toolbox includes Windows imaging (Intune/Autopilot), asset tracking, scripting for process automation, and clear communication with internal customers.</p>
+      </section>
 
-    <!-- Skills -->
-    <section id="skills" class="section alt">
-      <div class="container">
+      <!-- Skills -->
+      <section id="skills" class="panel alt">
         <h2>Skills</h2>
         <ul class="tags">
           <li>Windows Imaging (Intune/Autopilot)</li>
@@ -113,12 +100,10 @@
           <li>Customer Support</li>
           <li>Documentation</li>
         </ul>
-      </div>
-    </section>
+      </section>
 
-    <!-- Experience -->
-    <section id="experience" class="section">
-      <div class="container">
+      <!-- Experience -->
+      <section id="experience" class="panel">
         <h2>Experience</h2>
         <ol class="timeline">
           <li>
@@ -134,12 +119,10 @@
             </div>
           </li>
         </ol>
-      </div>
-    </section>
+      </section>
 
-    <!-- Projects -->
-    <section id="projects" class="section alt">
-      <div class="container">
+      <!-- Projects -->
+      <section id="projects" class="panel alt">
         <h2>Projects</h2>
         <div class="grid">
           <article class="card project">
@@ -162,56 +145,97 @@
             </div>
           </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Education -->
-    <section id="education" class="section">
-      <div class="container">
+      <!-- Certifications (new) -->
+      <section id="certifications" class="panel">
+        <h2>Certifications</h2>
+        <div class="certs">
+          <article class="cert card">
+            <h3>CompTIA A+</h3>
+            <p class="issuer">CompTIA</p>
+            <ul class="tags"><li>Hardware</li><li>Troubleshooting</li></ul>
+          </article>
+          <article class="cert card">
+            <h3>CompTIA Network+ (N+)</h3>
+            <p class="issuer">CompTIA</p>
+            <ul class="tags"><li>Networking</li><li>Infrastructure</li></ul>
+          </article>
+          <article class="cert card">
+            <h3>/article>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="panel alt">
         <h2>Education</h2>
         <ul class="list">
           <li>
             <div class="card">
-              <h3>Bachelor of Science in Information Technology</h3>
+              <h3>BSc in Information Technology</h3>
               <p class="meta">Sample University · 2019 — 2023 · Gurugram</p>
               <p>Coursework: Operating Systems, Networking, Scripting, ITIL Foundations.</p>
             </div>
           </li>
         </ul>
-      </div>
-    </section>
+      </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section alt">
-      <div class="container">
+      <!-- Contact -->
+      <section id="contact" class="panel">
         <h2>Contact</h2>
-        <div class="contact-card">
-          <p>
-            <strong>Email:</strong>
-            <a href="mailto:134dev.s@gmail.com">134dev.s@gmail.com</a>
-          </p>
-          <p>
-            <strong>Phone:</strong>
-            <a href="tel:+919340848451">+91 93408 48451</a>
-          </p>
-          <p>
-            <strong>GitHub:</strong>
-            <a href="https://github.com/devansh-it">github.com/devansh-it</a>
-          </p>
-          <p>
-            <strong>LinkedIn:</strong>
-            <a href="https://www.linkedin.com/in/devansh-it">linkedin.com/in/devansh-it</a>
-          </p>
-        </div>
-      </div>
-    </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Certified By A+, N+, CCNA, ITIL, Azure, AI Skillset.</p>
-      <a class="back-to-top" href="#top">Back to top ↑</a>
-    </div>
-  </footer>
+        <div class="card contact-card" style="margin-bottom:1rem">
+          <p><strong>Email:</strong> mailto:134dev.s@gmail.com134dev.s@gmail.com</a></p>
+          <p><strong>Phone:</strong> tel:+919340848451+91 93408 48451</a></p>
+          <p><strong>GitHub:</strong> https://github.com/devansh-itgithub.com/devansh-it</a></p>
+          <p><strong>LinkedIn:</strong> https://www.linkedin.com/in/devansh-itlinkedin.com/in/devansh-it</a></p>
+        </div>
+
+        <!-- Contact form (mailto handler in script.js) -->
+        <form id="contact-form" class="form card" novalidate>
+          <div class="form-row">
+            <div>
+              <label for="name" class="label">Name</label>
+              <input id="name" name="name" class="input" type="text" placeholder="Your name" required>
+            </div>
+            <div>
+              <label for="email" class="label">Email</label>
+              <input id="email" name="email" class="input" type="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="phone" class="label">Phone</label>
+              <input id="phone" name="phone" class="input" type="tel" placeholder="+91 93408 48451">
+            </div>
+            <div>
+              <label for="subject" class="label">Subject</label>
+              <input id="subject" name="subject" class="input" type="text" placeholder="How can I help?">
+            </div>
+          </div>
+          <div class="form-row single">
+            <div>
+              <label for="message" class="label">Message</label>
+              <textarea id="message" name="message" class="textarea" placeholder="Write your message..." required></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn primary">Send Message</button>
+          <p class="muted" style="margin-top:.4rem">Submitting opens your mail app with the details pre‑filled.</p>
+        </form>
+      </section>
+
+      <footer class="site-footer">
+        <p>© <span id="year"></span> Certified By A+, N+, CCNA, ITIL, Azure, AI Skillset.</p>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Mobile bottom nav (vCard-like quick tabs) -->
+  <nav class="bottom-nav" aria-label="Mobile section nav">
+    #aboutAbout</a>
+    #skillsSkills</a>
+    #projectsProjects</a>
+    #contactContact</a>
+  </nav>
 </body>
 </html>
